@@ -60,7 +60,7 @@ const Hero = () => {
           style={{ border, boxShadow }}
           whileHover={{ scale: 1.015 }}
           whileTap={{ scale: 0.985 }}
-          className="flex w-fit items-center gap-2 rounded-full px-4 py-2"
+          className="flex w-fit items-center gap-2 rounded-lg px-4 py-2"
         >
           Download CV
           <FiArrowRight />
