@@ -1,13 +1,10 @@
 import { useEffect } from "react";
-// import obj from "../assets/obj1.png";
-// import profilepic from "../assets/profilepic.png";
 import {
   animate,
   useMotionTemplate,
   useMotionValue,
   motion,
 } from "framer-motion";
-import Image from "next/image";
 import { FiArrowRight } from "react-icons/fi";
 
 const COLORS_TOP = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C"];
@@ -34,42 +31,30 @@ const Hero = () => {
       className="relative grid min-h-screen place-content-center overflow-hidden px-4 py-24 text-gray-200 "
     >
       <div className="z-10 flex flex-col items-center">
-        <span className="mb-1.5 inline-block rounded-full bg-gray-600/50 px-3 py-1.5 text-sm">
-          Open for work
+        <span className="mb-7 inline-block rounded-lg px-3 py-1.5 text-sm">
+          Welcome to my portfolio
         </span>
-        <h1 className="text-white/40 text-5xl md:text-7xl font-black">
-          Hi, I am
+        <h1 className="text-white/40 text-6xl md:text-7xl font-black text-center">
+          Hi, I'm
         </h1>
-        <h1 className="max-w-3xl bg-gradient-to-br from-white to-gray-400 bg-clip-text font-black leading-tight text-transparent text-5xl md:text-7xl">
+        <h1 className="mt-3 max-w-3xl bg-gradient-to-br from-white to-gray-400 bg-clip-text font-black leading-tight text-transparent text-6xl md:text-7xl text-center">
           Ung China
         </h1>
-        {/* <Image src={profilepic} alt="profile pic" width={200} /> */}
-
-        {/* <div className="flex bg-white/10 shadow-xl p-3 rounded-3xl justify-center items-center space-x-2 mb-4">
-          <Image src={obj} alt="obj" width={30} className="rounded-2xl" />
-          <Image src={obj} alt="obj" width={30} className="rounded-2xl" />
-          <Image src={obj} alt="obj" width={30} className="rounded-2xl" />
-          <p className="font-medium">80+ Happy Clients</p>
-        </div> */}
-        <p className="my-6 max-w-xl text-center">
-          Fullstack Developer based in Siem Reap, with over 2 years of
-          experience
+        <p className="my-10 max-w-2xl text-center">
+          Building impactful web and mobile applications that prioritize both
+          innovation and practicality. Dedicated to creating user-centric
+          solutions that drive growth and enhance digital experiences.
         </p>
-
         <motion.button
-          style={{ border, boxShadow }}
+          style={{ border }}
           whileHover={{ scale: 1.015 }}
           whileTap={{ scale: 0.985 }}
-          className="flex w-fit items-center gap-2 rounded-lg px-4 py-2"
+          className="flex w-fit items-center gap-2 rounded-lg px-4 py-2 "
         >
-          Download CV
+          Get in Touch
           <FiArrowRight />
         </motion.button>
       </div>
-      {/* <div className="bg-circle-container">
-        <div className="bg-circle-background"></div>
-        <div className="bg-circle"></div>
-      </div> */}
     </motion.section>
   );
 };
