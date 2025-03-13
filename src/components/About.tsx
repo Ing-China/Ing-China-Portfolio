@@ -78,7 +78,7 @@ const About = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ delay: 0.2, duration: 0.6 }}
-          className="text-6xl font-bold mb-12"
+          className="text-6xl mb-12 bg-gradient-to-br from-white to-gray-400 bg-clip-text font-black leading-tight text-transparent"
         >
           About Me
         </motion.h2>
