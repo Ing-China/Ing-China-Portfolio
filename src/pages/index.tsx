@@ -1,6 +1,7 @@
 import {
   About,
   Contact,
+  Experience,
   Footer,
   Hero,
   Navbar,
@@ -15,6 +16,7 @@ export default function Home() {
       <Hero />
       <About />
       <Stack />
+      <Experience />
       <Project />
       <Contact />
       <Footer />
