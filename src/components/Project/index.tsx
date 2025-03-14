@@ -1,4 +1,4 @@
-import { Timeline } from "./ui/timeline";
+import { Timeline } from "../UI/TimeLine";
 
 const fakeData = [
   {
@@ -37,7 +37,7 @@ const fakeData = [
   },
 ];
 
-const Projects = () => {
+const Project = () => {
   return (
     <section id="project">
       <Timeline data={fakeData} />
@@ -45,4 +45,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Project;

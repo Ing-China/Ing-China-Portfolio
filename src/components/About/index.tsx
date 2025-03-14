@@ -6,51 +6,13 @@ import {
   animate,
   useMotionTemplate,
 } from "framer-motion";
+import { abouts } from "@/data";
 
 const COLORS_TOP = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C"];
-
-const metrics = [
-  {
-    id: 1,
-    value: "1+",
-    label: "Years of Mobile Development Experience",
-    description:
-      "Focused on building user-friendly and performance-optimized mobile apps.",
-  },
-  {
-    id: 2,
-    value: "15+",
-    label: "Mobile Apps Developed",
-    description:
-      "From simple utilities to feature-rich apps for both iOS and Android.",
-  },
-  {
-    id: 3,
-    value: "5+",
-    label: "Mobile Frameworks Mastered",
-    description:
-      "Proficient in React Native, Flutter, and native iOS/Android development.",
-  },
-  {
-    id: 4,
-    value: "90%",
-    label: "App Performance Optimization",
-    description:
-      "Dedicated to improving app speed, responsiveness, and memory usage.",
-  },
-  {
-    id: 5,
-    value: "300+",
-    label: "Commits on GitHub for Mobile Projects",
-    description:
-      "Active contributor to mobile app development, both personal and open-source.",
-  },
-];
 
 const About = () => {
   const ref = React.useRef<HTMLElement>(null);
   const isInView = useInView(ref, { once: false });
-
   const color = useMotionValue(COLORS_TOP[0]);
 
   React.useEffect(() => {
@@ -83,7 +45,7 @@ const About = () => {
           About Me
         </motion.h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14">
-          {metrics.map((metric, index) => (
+          {abouts.map((about, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
@@ -105,7 +67,7 @@ const About = () => {
                   fontWeight: "bold",
                 }}
               >
-                {metric.value}
+                {about.value}
               </motion.h3>
 
               <motion.p
@@ -117,7 +79,7 @@ const About = () => {
                 }}
                 className="text-xl font-semibold mb-2"
               >
-                {metric.label}
+                {about.label}
               </motion.p>
 
               <motion.p
@@ -129,7 +91,7 @@ const About = () => {
                 }}
                 className="text-gray-400"
               >
-                {metric.description}
+                {about.description}
               </motion.p>
             </motion.div>
           ))}

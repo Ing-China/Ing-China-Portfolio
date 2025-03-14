@@ -1,13 +1,8 @@
 import { useState } from "react";
 import Link from "next/link";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import { navLinks } from "@/data";
 
-const navLinks = [
-  { title: "About", path: "#about" },
-  { title: "Stack", path: "#stack" },
-  { title: "Project", path: "#project" },
-  { title: "Contact", path: "#contact" },
-];
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const toggleNav = () => {
