@@ -3,6 +3,7 @@ import { animate } from "motion";
 
 import { useScroll, useTransform, motion, useMotionValue } from "motion/react";
 import React, { useEffect, useRef, useState } from "react";
+import { LinkPreview } from "../ui";
 
 const COLORS_TOP = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C"];
 
@@ -54,12 +55,15 @@ const Experience = () => {
                   <div className="h-4 w-4 rounded-full bg-neutral-800 border border-neutral-700 p-2" />
                 </div>
                 <div className="flex flex-col md:pl-20">
-                  <motion.h3
-                    className="hidden md:block pb-4 md:text-5xl font-bold"
-                    style={{ color: color }}
-                  >
-                    {item.companyName}
-                  </motion.h3>
+                  <LinkPreview url={item.companyUrl}>
+                    <motion.h3
+                      className="hidden md:block pb-4 md:text-5xl font-bold"
+                      style={{ color: color }}
+                    >
+                      {item.companyName}
+                    </motion.h3>
+                  </LinkPreview>
+
                   <h3 className="hidden md:block md:text-2xl font-bold text-neutral-500">
                     {item.duration}
                   </h3>
@@ -67,12 +71,14 @@ const Experience = () => {
               </div>
 
               <div className="relative pl-20 pr-4 md:pl-4 w-full">
-                <motion.h3
-                  className="md:hidden block text-3xl mb-2 text-left font-bold"
-                  style={{ color: color }}
-                >
-                  {item.companyName}
-                </motion.h3>
+                <LinkPreview url={item.companyUrl}>
+                  <motion.h3
+                    className="md:hidden block text-3xl mb-2 text-left font-bold"
+                    style={{ color: color }}
+                  >
+                    {item.companyName}
+                  </motion.h3>
+                </LinkPreview>
                 <h3 className="md:hidden block pb-2 text-xl text-left font-bold text-neutral-500">
                   {item.duration}
                 </h3>

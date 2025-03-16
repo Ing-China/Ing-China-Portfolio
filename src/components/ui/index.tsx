@@ -1,3 +1,3 @@
 import { CollisionMechanism } from "./CollisionMechanism";
-
-export { CollisionMechanism };
+import { LinkPreview } from "./LinkPreview";
+export { CollisionMechanism, LinkPreview };

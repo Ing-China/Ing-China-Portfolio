@@ -42,6 +42,7 @@ export const experiences = [
         </div>
       </>
     ),
+    companyUrl: "https://eot.eocambo.dev",
   },
   {
     companyName: "EOT",
@@ -72,6 +73,7 @@ export const experiences = [
         </div>
       </>
     ),
+    companyUrl: "https://eot.eocambo.dev",
   },
   {
     companyName: "CPR Print",
@@ -101,5 +103,6 @@ export const experiences = [
         </div>
       </>
     ),
+    companyUrl: "",
   },
 ];
