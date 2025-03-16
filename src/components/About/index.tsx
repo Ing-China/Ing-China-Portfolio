@@ -66,6 +66,7 @@ const About = () => {
                   fontSize: "3rem",
                   fontWeight: "bold",
                 }}
+                // className="text-5xl font-semibold"
               >
                 {about.value}
               </motion.h3>

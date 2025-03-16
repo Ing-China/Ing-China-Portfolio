@@ -31,7 +31,9 @@ const Stack = () => {
                     style: { color: item.color },
                   })}
                 </div>
-                <p className="text-gray-400 font-semibold">{item.name}</p>
+                <p className="bg-gradient-to-br from-white to-gray-400 bg-clip-text leading-tight text-transparent font-semibold">
+                  {item.name}
+                </p>
               </div>
             ))}
           </motion.div>
@@ -58,7 +60,9 @@ const Stack = () => {
                     style: { color: item.color },
                   })}
                 </div>
-                <p className="text-gray-400 font-semibold">{item.name}</p>
+                <p className="bg-gradient-to-br from-white to-gray-400 bg-clip-text leading-tight text-transparent font-semibold">
+                  {item.name}
+                </p>
               </div>
             ))}
           </motion.div>
