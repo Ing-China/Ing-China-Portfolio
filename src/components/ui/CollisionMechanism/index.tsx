@@ -1,9 +1,8 @@
 import React, { useRef, useState, useEffect } from "react";
 import { motion, useMotionValue, animate } from "framer-motion";
 
-import { cn } from "../../lib/utils";
-import { Explosion } from "./Explosion";
-
+import { cn } from "../../../lib/utils";
+import { Explosion } from "../Explosion";
 const COLORS_TOP = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C"];
 
 export const CollisionMechanism = React.forwardRef<

@@ -8,8 +8,8 @@ import {
 import { FiArrowRight } from "react-icons/fi";
 import { cn } from "../../lib/utils";
 import React, { useRef } from "react";
-import { CollisionMechanism } from "../UI/CollisionMechanism";
 import { beams } from "@/data";
+import { CollisionMechanism } from "../ui";
 
 const COLORS_TOP = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C"];
 
