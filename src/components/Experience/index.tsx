@@ -1,3 +1,4 @@
+"use client";
 import { experiences } from "@/data";
 import { animate } from "motion";
 

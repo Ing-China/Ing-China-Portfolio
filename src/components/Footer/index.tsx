@@ -1,3 +1,4 @@
+"use client";
 import { socialLinks } from "@/data";
 
 const Footer = () => {

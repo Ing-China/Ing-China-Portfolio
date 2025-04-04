@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react";
 import Link from "next/link";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
@@ -11,6 +12,7 @@ const Navbar = () => {
   const closeNav = () => {
     setNav(false);
   };
+
   return (
     <div className="z-50 fixed flex justify-center w-full text-white font-bold">
       <div className="border border-white/20 mt-8 backdrop-blur-3xl rounded-lg hidden md:flex items-center justify-center p-2 max-w-[500px] mx-auto">

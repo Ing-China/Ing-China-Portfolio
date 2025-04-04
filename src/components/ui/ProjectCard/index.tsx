@@ -17,7 +17,7 @@ export const HoverEffect = ({
   }[];
   className?: string;
 }) => {
-  let [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const color = useMotionValue(COLORS_TOP[0]);
 
   useEffect(() => {

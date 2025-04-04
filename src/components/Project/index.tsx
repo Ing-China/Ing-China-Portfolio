@@ -1,15 +1,7 @@
-import Image from "next/image";
-import { CardBody, CardContainer, CardItem, HoverEffect } from "../ui";
-import Link from "next/link";
-import {
-  animate,
-  useMotionTemplate,
-  useMotionValue,
-  motion,
-} from "framer-motion";
-import { FiArrowRight } from "react-icons/fi";
+"use client";
+import { HoverEffect } from "../ui";
+import { animate, useMotionValue } from "framer-motion";
 import { useEffect } from "react";
-import { AiFillGithub } from "react-icons/ai";
 
 const COLORS_TOP = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C"];
 
