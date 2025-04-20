@@ -42,7 +42,7 @@ const Hero = () => {
         )}
       >
         <div className="z-10 flex flex-col items-center">
-          <span className="mb-7 inline-block rounded-lg px-3 py-1.5 text-sm">
+          <span className="mb-7 inline-block rounded-lg px-3 py-1.5 text-sm text-white">
             Welcome to my portfolio
           </span>
           <h1 className="text-white/40 text-6xl md:text-7xl font-black text-center">
@@ -51,7 +51,7 @@ const Hero = () => {
           <h1 className="mt-3 max-w-3xl bg-gradient-to-br from-white to-gray-400 bg-clip-text font-black leading-tight text-transparent text-6xl md:text-7xl text-center">
             Ung China
           </h1>
-          <p className="my-10 max-w-2xl text-center">
+          <p className="my-10 max-w-2xl text-center text-white">
             Building impactful web and mobile applications that prioritize both
             innovation and practicality. Dedicated to creating user-centric
             solutions that drive growth and enhance digital experiences.
@@ -60,7 +60,7 @@ const Hero = () => {
             style={{ border }}
             whileHover={{ scale: 1.015 }}
             whileTap={{ scale: 0.985 }}
-            className="flex w-fit items-center gap-2 rounded-lg px-4 py-2 "
+            className="flex w-fit items-center gap-2 rounded-lg px-4 py-2 text-white"
           >
             Get in Touch
             <FiArrowRight />

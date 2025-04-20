@@ -4,8 +4,8 @@ import { Lanyard } from "../ui";
 
 const Contact = () => {
   return (
-    <section id="contact">
-      <div className="h-screen">
+    <section className="px-4 py-32" id="contact">
+      <div className="flex justify-center items-center">
         <Lanyard position={[0, 0, 15]} gravity={[0, -40, 0]} />
       </div>
     </section>

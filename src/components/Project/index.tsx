@@ -18,7 +18,7 @@ const Project = () => {
   return (
     <section className="px-4 py-32 bg-black" id="project">
       <div className="container mx-auto">
-        <h2 className="text-6xl bg-gradient-to-br from-white to-gray-400 bg-clip-text font-black leading-tight text-transparent">
+        <h2 className="text-6xl pb-12 bg-gradient-to-br from-white to-gray-400 bg-clip-text font-black leading-tight text-transparent">
           Project
         </h2>
         <HoverEffect items={projects} />
@@ -31,39 +31,39 @@ export default Project;
 
 export const projects = [
   {
-    title: "Stripe",
+    title: "The Sneakers Shop",
     description:
-      "A technology company that builds economic infrastructure for the internet.",
-    link: "https://stripe.com",
+      "The Sneakers Shop is your go-to online store for trendy and high-quality sneakers. Whether you're into casual or athletic footwear, we’ve got you covered with a wide selection of styles and sizes to match your personality and lifestyle.",
+    github: "...",
+    playStore: "...",
+    appStore: "...",
+    image: "/assets/project.png",
   },
   {
-    title: "Netflix",
+    title: "Phsar Niseth Khmer",
     description:
-      "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
-    link: "https://netflix.com",
+      "Phsar Niseth Khmer is your local online marketplace for fresh and affordable vegetables. We bring you the best of Cambodia’s farm-to-table produce, delivering top-quality vegetables directly to your door for a healthier and more sustainable lifestyle.",
+    github: "...",
+    playStore: "...",
+    appStore: "...",
+    image: "/assets/project.png",
   },
   {
-    title: "Google",
+    title: "SP Mobile",
     description:
-      "A multinational technology company that specializes in Internet-related services and products.",
-    link: "https://google.com",
+      "SP Mobile is the ultimate kitchen mart, offering a variety of products designed to make your cooking experience easier and more efficient. From essential utensils to advanced gadgets, we have everything you need to elevate your kitchen.",
+    github: "...",
+    playStore: "...",
+    appStore: "...",
+    image: "/assets/project.png",
   },
   {
-    title: "Meta",
+    title: "Budgit",
     description:
-      "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
-    link: "https://meta.com",
-  },
-  {
-    title: "Amazon",
-    description:
-      "A multinational technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
-    link: "https://amazon.com",
-  },
-  {
-    title: "Microsoft",
-    description:
-      "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
-    link: "https://microsoft.com",
+      "Budgit is the perfect app to help you manage your finances. Track your income, expenses, and budgets with ease, and get detailed reports to stay on top of your financial goals. Whether you're saving for something special or just keeping track of everyday spending, Budgit makes it simple.",
+    github: "...",
+    playStore: "...",
+    appStore: "...",
+    image: "/assets/project.png",
   },
 ];

@@ -79,7 +79,7 @@ const About = () => {
                   delay: 0.8 + index * 0.1,
                   duration: 0.4,
                 }}
-                className="text-xl font-semibold mb-2"
+                className="text-xl font-semibold mb-2 text-white"
               >
                 {about.label}
               </motion.p>
@@ -91,7 +91,7 @@ const About = () => {
                   delay: 1 + index * 0.1,
                   duration: 0.4,
                 }}
-                className="text-gray-400"
+                className="text-neutral-600"
               >
                 {about.description}
               </motion.p>

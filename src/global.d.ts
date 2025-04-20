@@ -8,16 +8,14 @@ declare module "meshline" {
   export const MeshLineMaterial: any;
 }
 
-declare global {
-  namespace JSX {
-    interface IntrinsicElements {
-      meshLineGeometry: any;
-      meshLineMaterial: any;
-    }
+import { MeshLineGeometry, MeshLineMaterial } from "meshline";
+import { extend, Object3DNode, MaterialNode } from "@react-three/fiber";
+
+declare module "@react-three/fiber" {
+  interface ThreeElements {
+    meshLineGeometry: Object3DNode<MeshLineGeometry, typeof MeshLineGeometry>;
+    meshLineMaterial: MaterialNode<MeshLineMaterial, typeof MeshLineMaterial>;
   }
 }
 
--src / vite - env.d.ts;
-/// <reference types="vite/client" />
-declare module "*.glb";
-declare module "*.png";
+extend({ MeshLineGeometry, MeshLineMaterial });

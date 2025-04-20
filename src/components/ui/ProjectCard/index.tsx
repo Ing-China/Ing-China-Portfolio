@@ -1,8 +1,9 @@
 import { cn } from "@/lib/utils";
 import { animate, useMotionValue, useMotionTemplate } from "framer-motion";
 import { AnimatePresence, motion } from "framer-motion";
-import Link from "next/link";
+import Image from "next/image";
 import { useEffect, useState } from "react";
+import { FaGithub, FaGooglePlay, FaApple } from "react-icons/fa";
 
 const COLORS_TOP = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C"];
 
@@ -13,7 +14,10 @@ export const HoverEffect = ({
   items: {
     title: string;
     description: string;
-    link: string;
+    github?: string;
+    playStore?: string;
+    appStore?: string;
+    image: string;
   }[];
   className?: string;
 }) => {
@@ -34,14 +38,13 @@ export const HoverEffect = ({
   return (
     <div
       className={cn(
-        "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-10 gap-4",
+        "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-4",
         className
       )}
     >
       {items.map((item, idx) => (
-        <Link
-          href={item?.link}
-          key={item?.link}
+        <div
+          key={idx}
           className="relative group block p-1 h-full w-full"
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
@@ -63,10 +66,44 @@ export const HoverEffect = ({
           </AnimatePresence>
 
           <Card>
+            {item.image && (
+              <Image
+                src={item.image}
+                alt={item.title}
+                width={400}
+                height={200}
+                className="w-full h-48 object-cover rounded-md"
+              />
+            )}
             <CardTitle>{item.title}</CardTitle>
             <CardDescription>{item.description}</CardDescription>
+            <div className="flex gap-4 mt-4 text-white text-xl">
+              {item.github && (
+                <a href={item.github} target="_blank" rel="noopener noreferrer">
+                  <FaGithub className="hover:text-gray-400 transition" />
+                </a>
+              )}
+              {item.playStore && (
+                <a
+                  href={item.playStore}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaGooglePlay className="hover:text-gray-400 transition" />
+                </a>
+              )}
+              {item.appStore && (
+                <a
+                  href={item.appStore}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaApple className="hover:text-gray-400 transition" />
+                </a>
+              )}
+            </div>
           </Card>
-        </Link>
+        </div>
       ))}
     </div>
   );
@@ -82,7 +119,7 @@ export const Card = ({
   return (
     <div
       className={cn(
-        "rounded-lg h-full w-full p-4 overflow-hidden bg-black border border-white/[0.2] group-hover:border-slate-700 relative z-20",
+        "rounded-lg h-full w-full overflow-hidden bg-black border border-white/[0.2] group-hover:border-slate-700 relative z-20",
         className
       )}
     >
@@ -116,7 +153,7 @@ export const CardDescription = ({
   return (
     <p
       className={cn(
-        "mt-8 text-zinc-400 tracking-wide leading-relaxed text-sm",
+        "mt-4 text-neutral-600 tracking-wide leading-relaxed text-sm h-30",
         className
       )}
     >

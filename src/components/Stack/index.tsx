@@ -25,15 +25,13 @@ const Stack = () => {
                 key={`left-${index}`}
                 className="flex items-center justify-center flex-col rounded-xl p-4"
               >
-                <div className="mb-4 bg-white/10 p-6 rounded-xl">
+                <div className="mb-4 bg-white/10 p-6 rounded-lg">
                   {React.createElement(item.icon, {
                     className: "w-24 h-24",
                     style: { color: item.color },
                   })}
                 </div>
-                <p className="bg-gradient-to-br from-white to-gray-400 bg-clip-text leading-tight text-transparent font-semibold">
-                  {item.name}
-                </p>
+                <p className="text-white font-semibold">{item.name}</p>
               </div>
             ))}
           </motion.div>
@@ -54,15 +52,13 @@ const Stack = () => {
                 key={`right-${index}`}
                 className="flex items-center justify-center flex-col rounded-xl p-4"
               >
-                <div className="mb-4 bg-white/10 p-6 rounded-xl">
+                <div className="mb-4 bg-white/10 p-6 rounded-lg">
                   {React.createElement(item.icon, {
                     className: "w-24 h-24",
                     style: { color: item.color },
                   })}
                 </div>
-                <p className="bg-gradient-to-br from-white to-gray-400 bg-clip-text leading-tight text-transparent font-semibold">
-                  {item.name}
-                </p>
+                <p className="text-white font-semibold">{item.name}</p>
               </div>
             ))}
           </motion.div>

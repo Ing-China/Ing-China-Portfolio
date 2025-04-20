@@ -65,7 +65,7 @@ const Experience = () => {
                     </motion.h3>
                   </LinkPreview>
 
-                  <h3 className="hidden md:block md:text-2xl font-bold text-neutral-500">
+                  <h3 className="hidden md:block md:text-2xl font-bold text-white">
                     {item.duration}
                   </h3>
                 </div>

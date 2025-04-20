@@ -4,7 +4,7 @@ export const experiences = [
     duration: "July 2024 - Present",
     content: (
       <>
-        <h3 className="text-xl pb-2 font-bold text-neutral-500">
+        <h3 className="text-xl pb-2 font-bold text-white">
           React Native Developer
         </h3>
         <div className="space-y-2">
@@ -49,8 +49,8 @@ export const experiences = [
     duration: "April 2024 - Jun 2024",
     content: (
       <>
-        <h3 className="text-xl pb-2 font-bold text-neutral-500">
-          React Native Developer
+        <h3 className="text-xl pb-2 font-bold text-white">
+          React Native Developer Internship
         </h3>
         <div className="space-y-2">
           <p className="text-neutral-600">
@@ -80,9 +80,7 @@ export const experiences = [
     duration: "Sep 2022 - Jan 2024",
     content: (
       <>
-        <h3 className="text-xl pb-2 font-bold text-neutral-500">
-          Graphic Designer
-        </h3>
+        <h3 className="text-xl pb-2 font-bold text-white">Graphic Designer</h3>
         <div className="space-y-2">
           <p className="text-neutral-600">
             • Designed and delivered over 50+ successful print projects,
