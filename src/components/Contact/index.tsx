@@ -32,7 +32,7 @@ const Contact = () => {
               <p className="text-lg text-gray-300">Phone</p>
               <a
                 href="tel:+85569786677"
-                className="text-2xl font-semibold hover:text-white/50 transition duration-300 flex items-center gap-2"
+                className="text-lg font-semibold hover:text-white/50 transition duration-300 flex items-center gap-2"
               >
                 +855 (0) 69 78 66 77
               </a>
@@ -42,7 +42,7 @@ const Contact = () => {
               <p className="text-lg text-gray-300">Email</p>
               <a
                 href="mailto:ingchina2004@gmail.com"
-                className="text-3xl font-semibold hover:text-white/50  transition duration-300 flex items-center gap-2"
+                className="text-lg font-semibold hover:text-white/50 transition duration-300 flex items-center gap-2"
               >
                 ingchina2004@gmail.com
               </a>
