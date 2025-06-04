@@ -8,7 +8,7 @@ export const abouts = [
   },
   {
     id: 2,
-    value: "15+",
+    value: "5+",
     label: "Mobile Apps Developed",
     description:
       "From simple utilities to feature-rich apps for both iOS and Android.",

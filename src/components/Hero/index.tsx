@@ -49,7 +49,7 @@ const Hero = () => {
             Hi, I&apos;m
           </h1>
           <h1 className="mt-3 max-w-3xl bg-gradient-to-br from-white to-gray-400 bg-clip-text font-black leading-tight text-transparent text-6xl md:text-7xl text-center">
-            Ung China
+            Ing China
           </h1>
           <p className="my-10 max-w-2xl text-center text-white">
             Building impactful web and mobile applications that prioritize both
